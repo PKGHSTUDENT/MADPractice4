@@ -7,7 +7,6 @@ class Cipher {
         for (ch in str) {
             val index = ALPHABET.indexOf(ch.uppercase())
             val shiftedIndex = (index + shift[index]) % ALPHABET.length
-3
             result += ALPHABET[shiftedIndex]
             key.value += shift[index].toString() + " "
         }
